@@ -7,7 +7,7 @@
   "author": "Minh ChiuCam <minhchiu.it@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "npm run build && node ./build/src/index.js",
+    "start": "node ./build/src/index.js",
     "dev": "nodemon --exec babel-node ./src/index.js",
     "clean": "rm -rf build && mkdir build",
     "build-babel": "babel ./src -d ./build/src",
