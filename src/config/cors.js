@@ -1,7 +1,7 @@
 import cors from 'cors'
 import createHttpError from 'http-errors'
 
-const whitelist = ['http://localhost:3000']
+const whitelist = ['http://localhost:3000', 'https://symphonious-kheer-356f00.netlify.app']
 
 const corsOptions = {
   origin(origin, callback) {
