@@ -5,7 +5,7 @@ import config from './config.validation'
 const createUser = {
   name: yup.string().trim().min(2).required(),
   email: yup.string().required().email(),
-  dateOfBirth: yup.date(),
+  // dateOfBirth: yup.date(),
   password: yup
     .string()
     .matches(config.regexPassword, transValidations.password_incorrect)
