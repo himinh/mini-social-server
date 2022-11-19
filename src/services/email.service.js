@@ -44,7 +44,7 @@ const sendEmailRegister = async (to, token) => {
   const text = 'Verify your email'
 
   // replace this url with the link to the register page of front-end app
-  const url = `http://localhost:3000/auth/activate/${token}`
+  const url = `https://symphonious-kheer-356f00.netlify.app/auth/activate/${token}`
 
   const htmlContent = transEmail.template(title, desc, url, text)
 
@@ -64,7 +64,7 @@ const sendEmailResetPassword = async (to, token, name) => {
   const desc = 'Please click the button below to reset your password.'
 
   // replace this url with the link to the reset password page of front-end app
-  const url = `http://localhost:3000/auth/reset-password/${token}`
+  const url = `https://symphonious-kheer-356f00.netlify.app/auth/reset-password/${token}`
 
   const htmlContent = transEmail.template(title, desc, url, text)
 
