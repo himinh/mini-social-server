@@ -37,6 +37,7 @@ const createNotificationLikePost = async (userFrom, userTo, postId) => {
     entityId: postId,
     type: notificationTypes.likePost,
   })
+
   return notify
 }
 
@@ -54,6 +55,7 @@ const createNotificationRetweetPost = async (userFrom, userTo, postId) => {
     entityId: postId,
     type: notificationTypes.retweetPost,
   })
+
   return notify
 }
 
@@ -71,6 +73,7 @@ const createNotificationComment = async (userFrom, userTo, postId, type) => {
     entityId: postId,
     type,
   })
+
   return notify
 }
 
@@ -88,6 +91,7 @@ const createNotificationLikeComment = async (userFrom, userTo, postId) => {
     entityId: postId,
     type: notificationTypes.likeComment,
   })
+
   return notify
 }
 
@@ -104,6 +108,7 @@ const createNotificationFollow = async (userFrom, userTo) => {
     entityId: userTo,
     type: notificationTypes.follow,
   })
+
   return notify
 }
 
@@ -121,6 +126,7 @@ const createNotificationNewMessage = async (userFrom, userTo, chatId) => {
     entityId: chatId,
     type: notificationTypes.newMessage,
   })
+
   return notify
 }
 
