@@ -7,15 +7,15 @@ on:
       - '**.js'
     branches:
       - 'master'
-    pull_request:
-      - type: [opened, reopened, synchronize, labeled, unlabeled]
+  pull_request:
+    - type: [opened, reopened, synchronize, labeled, unlabeled]
 
   workflow_dispatch:
 jobs:
   say-hello:
     runs-on: ubuntu-latest
     steps:
-      - uses: mheap/github-action-required-labels@v1
+      - uses: mheap/github-action-required-labels@v2
         with:
           mode: exactly
           count: 0
