@@ -8,7 +8,7 @@ on:
     branches:
       - 'master'
     pull_request:
-      type: [opened, reopened, synchronize, labeled, unlabeled]
+      - type: [opened, reopened, synchronize, labeled, unlabeled]
 
   workflow_dispatch:
 jobs:
