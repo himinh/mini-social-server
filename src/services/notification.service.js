@@ -1,6 +1,7 @@
 import createHttpError from 'http-errors'
 import { Notification } from '../models'
 
+// Notification Type
 export const notificationTypes = {
   likePost: 'likePost',
   retweetPost: 'retweetPost',
