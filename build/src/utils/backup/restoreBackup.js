@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.restoreBackup = restoreBackup;
 var _child_process = require("child_process");
 var _config = require("../../config");
-/* eslint-disable security/detect-child-process */
+/* eslint-disable */
 
 var DB_NAME = _config.config.app.db_name;
 var ARCHIVE_PATH = "".concat(DB_NAME, ".gzip");

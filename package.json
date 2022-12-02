@@ -12,7 +12,7 @@
     "clean": "rm -rf build && mkdir build",
     "build-babel": "babel ./src -d ./build/src",
     "build": "npm run clean && npm run build-babel",
-    "lint": "eslint \"**/*.js\"",
+    "lint": "npm run build && eslint \"**/*.js\"",
     "prepare": "husky install",
     "prettier": "prettier --check **/*.js",
     "prettier:fix": "prettier --write **/*.js"
