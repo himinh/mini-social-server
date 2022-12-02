@@ -13,7 +13,7 @@ var server = _app["default"].listen(_config.config.port, _config.logger.info("Se
 var io = new _socket.Server(server, {
   pingTimeout: 60000,
   cors: {
-    origin: 'http://localhost:3000'
+    origin: 'https://symphonious-kheer-356f00.netlify.app'
   }
 });
 io.on('connection', function (socket) {

@@ -72,7 +72,7 @@ var sendEmailRegister = /*#__PURE__*/function () {
             title = "<span>Welcome !</span> And thank you for registering !";
             desc = "Please validate your email by clicking the button below \uD83D\uDE42";
             text = 'Verify your email'; // replace this url with the link to the register page of front-end app
-            url = "http://localhost:3000/auth/activate/".concat(token);
+            url = "https://symphonious-kheer-356f00.netlify.app/auth/activate/".concat(token);
             htmlContent = _en.transEmail.template(title, desc, url, text);
             _context2.next = 8;
             return sendEmail(to, subject, htmlContent);
@@ -106,7 +106,7 @@ var sendEmailResetPassword = /*#__PURE__*/function () {
             text = 'Reset your password';
             title = "<span>Hey</span> ".concat(name);
             desc = 'Please click the button below to reset your password.'; // replace this url with the link to the reset password page of front-end app
-            url = "http://localhost:3000/auth/reset-password/".concat(token);
+            url = "https://symphonious-kheer-356f00.netlify.app/auth/reset-password/".concat(token);
             htmlContent = _en.transEmail.template(title, desc, url, text);
             _context3.next = 8;
             return sendEmail(to, subject, htmlContent);

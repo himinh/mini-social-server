@@ -29,15 +29,14 @@ var createMessage = /*#__PURE__*/function () {
             return _models.Message.create(messageBody);
           case 2:
             newMessage = _context.sent;
-            console.log({
-              mesID: newMessage._id
-            });
-            // Update latestMessage in chat
-            _context.next = 6;
+            _context.next = 5;
             return _.chatService.updateChatById(newMessage.chat, {
               latestMessage: newMessage._id
             });
-          case 6:
+          case 5:
+            console.log({
+              mesID: newMessage._id
+            });
             return _context.abrupt("return", newMessage.populate(['chat', 'sender', 'readBy']));
           case 7:
           case "end":
