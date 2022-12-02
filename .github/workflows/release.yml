@@ -15,5 +15,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - docker: build . -t minhchiu/minisocialserver
-      - run: echo "${{secrets.DOCKERHUB_PASSWORD}}" | docker login -u ${{secrets.DOCKERHUB_USERNAME}} --password stdin
+      - run: echo "${{secrets.DOCKERHUB_PASSWORD}}" | docker login -u ${{secrets.DOCKERHUB_USERNAME}} --password-stdin
       - run: docker push minhchiu/minisocialserver
