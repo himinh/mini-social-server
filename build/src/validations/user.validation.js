@@ -14,7 +14,6 @@ function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && 
 var createUser = {
   name: yup.string().trim().min(2).required(),
   email: yup.string().required().email(),
-  dateOfBirth: yup.date(),
   password: yup.string().matches(_config["default"].regexPassword, _en.transValidations.password_incorrect).required()
 };
 exports.createUser = createUser;

@@ -7,7 +7,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.configCors = void 0;
 var _cors = _interopRequireDefault(require("cors"));
 var _httpErrors = _interopRequireDefault(require("http-errors"));
-var whitelist = ['http://localhost:3000'];
+var whitelist = ['http://localhost:3000', 'https://symphonious-kheer-356f00.netlify.app'];
 var corsOptions = {
   origin: function origin(_origin, callback) {
     if (!_origin || whitelist.indexOf(_origin) !== -1) {
