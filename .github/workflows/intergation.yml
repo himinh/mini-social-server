@@ -26,9 +26,5 @@ jobs:
           cache: 'yarn'
 
       - run: yarn
-
-      - name: Check lint
-          run: yarn lint
-
-      - name: Build
-          run: yarn build
+      - run: yarn lint
+      - run: yarn build
