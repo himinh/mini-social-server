@@ -12,8 +12,7 @@
     "clean": "rm -rf build && mkdir build",
     "build-babel": "babel ./src -d ./build/src",
     "build": "npm run clean && npm run build-babel",
-    "lint": "npm eslint .",
-    "lint:fix": "npm lint --fix",
+    "lint": "eslint \"**/*.js\"",
     "prepare": "husky install",
     "prettier": "prettier --check **/*.js",
     "prettier:fix": "prettier --write **/*.js"
@@ -34,6 +33,7 @@
     "hpp": "^0.2.3",
     "http-errors": "^1.8.1",
     "jsonwebtoken": "^8.5.1",
+    "lint": "^0.8.6",
     "mongoose": "^6.0.13",
     "mongoose-deep-populate": "^3.2.0",
     "morgan": "^1.10.0",
