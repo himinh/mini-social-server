@@ -1,4 +1,4 @@
-/* eslint-disable security/detect-child-process */
+/* eslint-disable */
 import { spawn } from 'child_process'
 import { config, logger } from '../../config'
 
